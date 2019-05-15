@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prijavljivanje</title>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="login-page">
+  <div class="form">
+      
+      <div id='err' style="display:none;">
+  
+      </div>
+      
+      
+    <form class="register-form">
+      <input id='ime' type="text" placeholder="ime"/>
+      <input id='prezime' type="text" placeholder="prezime"/>
+      <input id='emailCreate' type="text" placeholder="email adresa"/>
+	  <input id='usernameCreate' type="text" placeholder="username"/>
+	  <input id='passwordCreate' type="password" placeholder="password"/>
+      <button onclick="kreirajNalog();return false;">Kreirajte</button>
+      <p class="message">Već ste registrovani? <a href="#">Prijavljivanje</a></p>
+    </form>
+    <form class="login-form">
+      <input id='username' type="text" placeholder="username"/>
+      <input id='password' type="password" placeholder="password"/>
+      <button onclick="ulogujSe();return false;">Prijavite se</button>
+      <p class="message">Nemate nalog? <a href="#">Kreirajte nalog</a></p>
+    </form>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script  src="js/index.js"></script>
+  
+</body>
+
+</html>

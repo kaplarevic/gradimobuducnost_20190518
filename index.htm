@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
+<!--
+	ucorpora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	https://www.freshdesignweb.com/ucorpora/
+-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+<head>
+	<!-- Basic Meta Tags -->
+  <meta charset="utf-8">
+  <title>Gradimo buducnost</title>
+	<meta name="description" content="ucorpora demo - Free Business Corporate HTML Template">
+	<meta name="keywords" content="ucorpora, ucorpora demo, free, template, corporate, clean, modern, bootstrap, creative, design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if (gte IE 9)|!(IE)]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <![endif]--> 
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" type="image/png">
+
+  <!-- Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/bootstrap-override.css" rel="stylesheet">
+
+  <!-- Font Avesome Styles -->
+  <link href="css/font-awesome/font-awesome.css" rel="stylesheet">
+	<!--[if IE 7]>
+		<link href="css/font-awesome/font-awesome-ie7.min.css" rel="stylesheet">
+	<![endif]-->
+
+  <!-- FlexSlider Style -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+
+	<!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->   
+
+</head>       
+<body>
+
+  <!-- Popup -->
+  <table id='popupEkranDobrodoslice' class="popup" style='display: none;'> 
+    <tr><td>
+      <p>fadfdafaddsfafad</p>
+    </td></tr>
+  </table>
+
+
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="row t-container">
+
+        <!-- Logo -->
+        <div class="span3">
+          <div class="logo">
+            <a href="index.htm"><img src="img/logo-header.png" alt=""></a>
+          </div>            
+        </div>
+
+        <div class="span9">
+          <div class="row space60"></div>
+             <nav id="nav" role="navigation">
+               	<a href="#nav" title="Show navigation">Show navigation</a>
+	            <a href="#" title="Hide navigation">Hide navigation</a>
+	            <ul class="clearfix">
+	           	<li class="active"><a href="index.htm" title="">Home</a></li>
+                <li><a href="about-us.htm" title="">O nama</a></li>                
+                <li><a href="gallery.htm" title="">Galerija</a></li>
+                <!-- <li><a href="services1.htm" title="">Usluge</a></li>-->
+                <li><a href="#" title=""><span>Ostalo</span></a>
+  			      <ul> <!-- Submenu -->
+                      <!-- <li><a href="components.htm" title="">Komponente</a></li>-->
+                      <li><a href="http://gradimobuducnost.rs/gradimobuducnost/user/index.html" title="">Log in</a></li>
+                      <li><a href="http://webmail.gradimobuducnost.rs/">Mail</a></li>
+  		         </ul> <!-- End Submenu -->      
+               </li>
+	           </ul>
+          </nav>
+         </div> 
+      </div> 
+       <div class="row space40"></div>
+          <div class="slider1 flexslider">  <!-- Slider -->
+            <div class="homePagePrijava">
+             <form class="form-prijava"> 
+              <table class="frontPrijava">
+                <thead>
+                  <th class="prijavaHeader he1">Prijava</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class ="prijavaKolona">
+                      <input  id="prijavaIme" class="inputPrijava inputSmall" placeholder="*Ime"></input>
+                      <input id="prijavaPrezime" class="inputPrijava inputSmall" placeholder="*Prezime"></input>
+                      <select id="prijavaGodRodjenja" class="select-css-1 selectSmall" title="Godina rodjenja">
+                        <option value="-1">*God.</option>
+                      </select>
+                       <div class="error" id="err-ime">Unesite ime</div>
+                       <div class="error" id="err-prezime">Unesite prezime</div>
+                       <div class="error" id="err-godRodjenja">Unesite godinu rođenja</div>
+                    </td> 
+                </tr>
+                <tr>    
+                  <td class ="prijavaKolona">
+                    <select id="prijavaStrucnaSprema" class="select-css-1 selectBig">
+                      <option value="-1">Stručna sprema</option>
+                    </select>
+                    <div class="error" id="err-strucnaSprema">Unesite stručnu spremu</div>
+                  </td> 
+                </tr>
+                <tr>    
+                  <td class ="prijavaKolona">
+                    <select id="prijavaOsnovnoZanimanje" class="select-css-1 selectBig">
+                      <option value="-1">Osnovno zanimanje</option>
+                    </select>
+                     <div class="error" id="err-osnovnoZanimanje">Unesite osnovno zanimanje</div>
+                  </td> 
+                </tr>
+                <tr>    
+                  <td class ="prijavaKolona">
+                    <select id="prijavaSekundarnoZanimanje" class="select-css-1 selectBig">
+                      <option value="-1">Sekundarno zanimanje</option>
+                    </select>
+                  </td> 
+                </tr>
+                <tr>    
+                  <td class ="prijavaKolona">
+                     <input id="prijavaKontaktBroj" class="inputPrijava inputBig2" placeholder="*Kontakt telefon"></input>
+                      <div class="error" id="err-kontaktTelefon">Unesite kontakt telefon</div>
+                  </td> 
+                </tr>
+                <tr>
+                  <td class ="prijavaKolona">
+                      <div class="error" id="err-form-prijava">Nisu ispravno popunjena sva polja!</div>
+                       <div class="ajaxsuccess prijavaSuccess" id="ajaxsuccess-prijava">Uspešno poslata prijava.</div> 
+                       <div class="error" id="err-form-prijava-postoji">Korisnik već postoji u bazi!</div>
+                    <button id="buttPosalji" class="buttonPosaljiPrijavu" >Pošalji prijavu</button> <!-- onclick="posaljiPrijavu() -->
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </form> 
+            </div>
+            <ul class="slides slidesPrijava">
+              <li>
+    	    	    <img src="img/slider/1.jpg" alt="">
+    	    		</li>
+    	    		<li>
+    	    	    <img src="img/slider/2.jpg" alt="">
+    	    		</li>
+    	    		<li>
+    	    	    <img src="img/slider/3.jpg" alt="">
+    	    		</li>
+              <li>
+    	    	    <img src="img/slider/4.jpg" alt="">
+    	    		</li>
+              <li>
+                <img src="img/slider/5.jpg" alt="">
+              </li>
+            </ul>
+          </div>  <!-- Slider End -->
+  </div> 
+</header>
+  <!-- Header End -->
+  <!-- Content -->
+  <div id="content">
+    <div class="container">
+       <div class="f-center">
+              <h2>Izaberite nas</h2>
+              <div class="head-info">
+                <a id="sendq" class="btn" href="#footer">Kontaktirajte nas za više informacija</a>
+            </div>  
+       </div>
+       <div class="f-hr"></div>
+      <div class="row space40"></div>
+      <div class="row">
+        <div class="span12">
+          <div class="row">
+            <!-- Service Container --> 
+            <div class="span4">
+              <!-- Service Icon --> 
+              <div class="ic-1"><i class="icon-lightbulb"></i></div>
+              <!-- Service Title --> 
+              <div class="title-1"><h4>Iskoristi priliku</h4></div>
+              <!-- Service Content --> 
+              <div class="text-1"> 
+			Ukoliko tražiš posao u građevinskoj struci upravo ti se ukazala jednistvena prilika.
+			</div>
+            </div>
+            <!-- Service Container End --> 
+            <div class="span4">
+              <div class="ic-1"><i class="icon-resize-small"></i></div>
+              <div class="title-1"><h4>Pošalji prijavu</h4></div>
+              <div class="text-1">         
+				Sve što treba da uradiš je da uneseš svoje podatke i pošalješ nam prijavu, a mi ćemo pronaći posao za tebe.
+              </div>
+            </div>
+            <div class="span4">
+              <div class="ic-1"><i class="icon-eye-open"></i></div>
+              <div class="title-1"><h4>Dobrodošao u tim</h4></div>
+              <div class="text-1">
+				Pridruži se timu i pomozi nam da zajedno izgradimo budućnost.
+              </div>
+            </div>    
+          </div>   
+        </div>   
+       
+        <div class="span12">
+          <h2>Imamo najbolja iskustva u ...</h2>
+        </div> 
+        <div class="span8">        
+          <img src="img/image01.png" alt="">
+        </div>
+        <div class="span4">
+          <div class="ic-1"></div>
+          <div class="title-1"><h4>Nase usluge:</h4></div>
+          <!-- List -->
+          <div class="text-1"> 
+            <ul class="list-b">
+              <!-- List Items -->
+              <li><i class="icon-ok"></i> Posao...</li>
+              <li><i class="icon-ok"></i> Konsultacije...</li>
+              <li><i class="icon-ok"></i> Analiza...</li>
+            </ul>     
+          </div>
+          <!-- List End -->
+        </div>
+               
+      </div>
+
+      <div class="space40"></div>  
+              
+      <!-- Our Clients -->
+      <div class="row">
+        <div class="span12">
+          <h3>Nasi klijenti(logo ili nesto od klijenata/saradnika)</h3>
+        </div>
+      </div> 
+    
+      <div id="our-clients" class="slider2 flexslider">
+        <ul class="slides">
+          <li>
+            <div class="row">
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/1.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/2.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/3.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/4.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/5.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/6.png" alt="">
+                </a>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <div class="row">
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/4.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/3.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/1.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/2.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/5.png" alt="">
+                </a>
+              </div>
+              <div class="span2">
+                <a href="#" rel="external">
+                    <img src="img/our-clients/6.png" alt="">
+                </a>
+              </div>
+            </div>  
+          </li>
+        </ul>
+      </div> 
+      <!-- Our Clients End -->
+      
+      <div class="space50"></div> 
+       
+    </div>
+  </div>
+  <!-- Content End -->
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+        <h3>Kontaktirajte nas</h3>
+        <div>         
+          <form class="form-main" name="ajax-form" id="ajax-form" action="#" method="post">
+            <div class="ajaxsuccess" id="ajaxsuccess-mail">E-mail uspesno poslat.</div> 
+            <div class="error" id="err-name">Unesite ime</div>
+            <input name="name" id="name" type="text" placeholder='Ime' value="" onfocus="if(this.value == 'Name') this.value='';" onblur="if(this.value == '') this.value='';" style='color:white;'>
+            
+            <div class="error" id="err-tel">Unesite telefon</div>
+		        <div class="error" id="err-tel">Telefon nije u ispravnom formatu</div>
+<input  name="telefon" id="telefon" type="text" placeholder='Telefon' value="" 
+onfocus="if(this.value == 'telefon') this.value='';" onblur="if(this.value == '') 
+this.value='';" style='color:white;'>
+
+<div class="error" id="err-zanimanje">Unesite Zanimanje</div>
+		        <div class="error" id="err-zanimanje">Zanimanje nije u ispravnom formatu</div>
+<input  name="zanimanje" id="zanimanje" type="text" placeholder='Zanimanje' value="" 
+onfocus="if(this.value == 'zanimanje') this.value='';" onblur="if(this.value == '') 
+this.value='';" style='color:white;'>
+            
+            <input  name="email" id="email" type="text" placeholder='E-mail' value=""  style='color:white;'>
+
+            <textarea  name="message" id="message" style='color:white;'></textarea><br>
+            <div>
+            	<div class="error" id="err-form">Nisu ispravno popunjena sva polja!</div>
+            	<div class="error" id="err-timedout">The connection to the server timed out!</div>
+            	<div class="error" id="err-state"></div>
+            </div>
+            <button id="send" class="btn f-right" onclick="sendUserInfo()" >Posalji <i class="icon-ok"></i></button>
+          </form>
+        </div>
+        </div>
+        <div class="span3 offset3">
+          <h3>Adresa</h3>
+          Br. Ulica<br>
+          Beograd, 11 050<br>
+          Srbija<br>
+          <br>
+          <i class="icon-phone"></i>+999999<br>
+          <i class="icon-envelope"></i><a href="mailto:support@example.com">emial@mail.com</a><br>
+          <i class="icon-home"></i><a href="#">www.primer.com</a>
+          
+          <div class="row space40"></div>  
+
+          <a href="#" class="social-network sn2 behance"></a>
+          <a href="#" class="social-network sn2 facebook"></a>
+          <a href="#" class="social-network sn2 pinterest"></a>
+          <a href="#" class="social-network sn2 flickr"></a>
+          <a href="#" class="social-network sn2 dribbble"></a>
+          <a href="#" class="social-network sn2 lastfm"></a>
+          <a href="#" class="social-network sn2 forrst"></a>
+          <a href="#" class="social-network sn2 xing"></a>      
+        </div>
+      </div>
+      
+      <div class="row space50"></div>
+      <div class="row">
+        <div class="span6">
+          <div class="logo-footer">
+            Design by <a href="">DJD</a>
+          </div>                       
+        </div>
+        <div class="span6 right">
+          &copy; 2019. 
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/js/sendInfo.js"></script>
+  <script type="text/javascript" src="js/js/getData.js"></script>
+  <script type="text/javascript" defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+
+    var globalListStucnaSpremaOffline = [
+    'Nekvalifikovani (NK) radnik (1. SSS)', //1
+    'Polukvalifikovani (PK) radnik (2. SSS)', //2
+    'Kvalifikovani (KV) radnik (3. SSS)', //3
+    'Četvrti stepen stručne spreme (4. SSS)',
+    'Visokokvalifikovani (VKV) radnik (5. SSS)',
+    'Više obrazovanje u trajanju od 2 do 3 god. (6.1 SSS)',
+    'Više obrazovanje sa specijalizacijom (6.2 SSS)',
+    'Osnovne (diplomske) studije (7.1 SSS)',
+    'Specijalističke studije (7.2 SSS)',
+    'Doktorat nauka (8. SSS)'];
+   
+    var globalListStucnaSprema = [];
+    var globalListZanimanje = [];
+    $(document).ready(function(){
+     // popupEkranDobrodoslice();
+      postaviSelect();
+    });
+
+    function postaviSelect(){
+      getZanimanje(postaviOsnovnoSekundarnoZanimanje);
+      postaviGodineRodjenja();
+      getStrucnaSprema(postaviStrucnuSpremu);;
+      //postaviOsnovnoZanimanje();
+      //postaviSekundarnaZanimanje();
+    }
+
+    function postaviOsnovnoSekundarnoZanimanje(){
+      postaviOsnovnoZanimanje();
+      postaviSekundarnoZanimanje();
+
+    }
+
+    function postaviStrucnuSpremu(){
+     for (var i = 0; i < globalListStucnaSprema.length; i++) {
+      if(globalListStucnaSprema[i] != ""){
+
+       var option = document.createElement("option");
+          option.value = globalListStucnaSprema[i].split("#")[0];
+          option.text = globalListStucnaSprema[i].split("#")[1];
+             $('#prijavaStrucnaSprema')[0].add(option); 
+      }
+     }
+     console.log("Postavio strucnu spremu.");
+  }
+
+    function postaviGodineRodjenja(){
+     for (var i = new Date().getFullYear() - 70; i <= new Date().getFullYear() - 15; i++) {
+       var option = document.createElement("option");
+          option.text = "" + i ;
+             $('#prijavaGodRodjenja')[0].add(option); 
+     }
+    }
+    
+    function postaviOsnovnoZanimanje(){
+      for (var i = 0; i < globalListZanimanje.length; i++) {
+        if(globalListZanimanje[i] != ""){
+          var option = document.createElement("option");
+          option.value = globalListZanimanje[i].split("#")[0];
+          option.text = globalListZanimanje[i].split("#")[1];
+             $('#prijavaOsnovnoZanimanje')[0].add(option); 
+      }
+     }
+     console.log("Postavio osnovna zanimanja.");
+    }
+
+    function postaviSekundarnoZanimanje(){
+      for (var i = 0; i < globalListZanimanje.length; i++) {
+        if(globalListZanimanje[i] != ""){
+          var option = document.createElement("option");
+          option.value = globalListZanimanje[i].split("#")[0];
+          option.text = globalListZanimanje[i].split("#")[1];
+             $('#prijavaSekundarnoZanimanje')[0].add(option); 
+      }
+     }
+     console.log("Postavio sekundarna zanimanja.");
+    }
+
+    function popupEkranDobrodoslice(){
+    $('#popupEkranDobrodoslice').dialog({
+        closeOnEscape: true,
+        width: 'auto',
+        height: 'auto',
+        position: [null, (window.innerHeight / 2) -350],
+        title: "Dobrodošli",
+        autoOpen: false,
+        resizable: false,
+        draggable: true,
+        closeText: 'zatvori',
+    }); 
+  }
+  </script>
+</body>
+</html>
+  
